@@ -118,9 +118,6 @@ class TournamentController extends AbstractController
         return $this->redirectToRoute('tournament_index');
     }
 
-    /**
-     * @Route("/{id}", name="tournament_delete", methods={"DELETE"})
-     */
     private function generateMatchup($round, $tournament)
     {
         // set the entitymanager
